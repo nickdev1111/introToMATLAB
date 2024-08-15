@@ -1,3 +1,6 @@
 img = imread('vandy.png');
-output = blur(img,2);
-imshow(output);
+for i=1:3
+    figure(i);
+    output = blur(img,i);
+    imshow(output);
+end
